@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 @Table(name="cita_medica")
 public class CitaMedica {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_cita")
     private Integer idCita;
 
